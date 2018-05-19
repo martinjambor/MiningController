@@ -1,0 +1,2 @@
+taskkill /f /im EthDcrMiner64.exe
+claymore\EthDcrMiner64.exe -epool eth-eu1.nanopool.org:9999 -mport 0 -ewal 0xA0711F662E0fb2faCC1F09F061eA27d2c65cbF4D/gaming-rig/EMAIL -gser 2 -mode 1 -epsw x -platform 1 -dcri 6 -fanmin 50 -fanmax 100 -tt 75 -cclock 1000 -cvddc 900 -mvddc 950 -mclock 950

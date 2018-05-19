@@ -1,0 +1,1089 @@
+19:05:17:191	d48	Check and remove old log files...
+19:05:17:191	d48	args: -epool eth-eu1.nanopool.org:9999 -mport 0 -ewal 0xA0711F662E0fb2faCC1F09F061eA27d2c65cbF4D/gaming-rig/EMAIL -gser 2 -mode 1 -epsw x -platform 1 -dcri 15 -fanmin 50 -fanmax 100 -tt 75 -cclock 1407 -mvddc 900 -mclock 950 
+19:05:17:191	d48	
+19:05:17:191	d48	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+19:05:17:191	d48	บ                Claymore's Dual GPU Miner - v11.7               บ
+19:05:17:191	d48	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+19:05:17:207	d48	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+19:05:17:207	d48	
+19:05:17:207	d48	b583 
+19:05:17:426	d48	ETH: 1 pool is specified
+19:05:17:426	d48	Main Ethereum pool is eth-eu1.nanopool.org:9999
+19:05:17:582	d48	OpenCL platform: AMD Accelerated Parallel Processing
+19:05:17:582	d48	OpenCL initializing...
+
+19:05:17:597	d48	AMD Cards available: 2 
+19:05:17:597	d48	GPU #0: gfx900 (Radeon RX Vega), 8176 MB available, 56 compute units (pci bus 11:0:0)
+19:05:17:597	d48	GPU #0 recognized as Vega
+19:05:17:597	d48	GPU #1: gfx900 (Radeon RX Vega), 8176 MB available, 56 compute units (pci bus 14:0:0)
+19:05:17:597	d48	GPU #1 recognized as Vega
+19:05:17:597	d48	POOL/SOLO version
+19:05:17:613	d48	Platform: Windows
+19:05:17:675	d48	start building OpenCL program for GPU 0...
+19:05:17:903	d48	done
+19:05:18:122	d48	start building OpenCL program for GPU 1...
+19:05:18:325	d48	done
+19:05:18:560	d48	GPU #0: algorithm ASM 1
+19:05:18:591	d48	GPU #1: algorithm ASM 1
+19:05:18:591	d48	Total cards: 2 
+19:05:22:683	d48	No NVIDIA cards in the list, NVML library will not be used.
+19:05:23:155	d48	SSL: Imported 38 certificates from local storage
+19:05:23:171	cb0	ETH: Stratum - connecting to 'eth-eu1.nanopool.org' <151.80.59.84> port 9999 (unsecure)
+19:05:23:202	cb0	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0xA0711F662E0fb2faCC1F09F061eA27d2c65cbF4D/gaming-rig/EMAIL", "x"], "id": 2, "method": "eth_submitLogin"}
+
+19:05:23:202	cb0	ETH: Stratum - Connected (eth-eu1.nanopool.org:9999) (unsecure)
+19:05:23:280	d48	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+19:05:23:280	cb0	buf: {"jsonrpc":"2.0","id":2,"result":true}
+{"jsonrpc":"2.0","id":0,"result":["0xa859f26ab9be577dc15cc8a5219831b0e65e1a08b54c9f451c01a62c41f38e0c","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:05:23:280	d48	ETH: eth-proxy stratum mode
+19:05:23:280	cb0	ETH: Authorized
+19:05:23:280	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:05:23:296	cb0	remove first packet 243
+19:05:23:280	d48	Watchdog enabled
+19:05:23:296	d48	
+19:05:23:327	1c8c	Setting DAG epoch #187...
+19:05:23:342	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xa859f26ab9be577dc15cc8a5219831b0e65e1a08b54c9f451c01a62c41f38e0c","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:05:23:452	1968	GPU 0 temp = 46, old fan speed = 0, new fan speed = 50 
+19:05:23:452	1968	GPU 1 temp = 47, old fan speed = 0, new fan speed = 50 
+19:05:25:155	1c8c	Setting DAG epoch #187 for GPU1
+19:05:25:170	1c8c	Create GPU buffer for GPU1
+19:05:26:476	1968	GPU 0 temp = 46, old fan speed = 0, new fan speed = 50 
+19:05:26:476	1968	GPU 1 temp = 52, old fan speed = 0, new fan speed = 50 
+19:05:27:149	1c8c	GPU1 DAG creation time - 1972 ms
+19:05:27:149	1c8c	Setting DAG epoch #187 for GPU1 done
+19:05:27:164	258	Setting DAG epoch #187 for GPU0
+19:05:27:164	258	Create GPU buffer for GPU0
+19:05:29:231	258	GPU0 DAG creation time - 2049 ms
+19:05:29:231	258	Setting DAG epoch #187 for GPU0 done
+19:05:29:496	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:05:29:496	1968	GPU 1 temp = 53, old fan speed = 0, new fan speed = 50 
+19:05:32:516	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:05:32:516	1968	GPU 1 temp = 53, old fan speed = 0, new fan speed = 50 
+19:05:32:900	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x2456e5294fc426ba8968cbf5d61fac12a8efb0fb44d461c30de0953332f4efba","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:05:32:900	cb0	ETH: 05/17/18-19:05:32 - New job from eth-eu1.nanopool.org:9999
+19:05:32:900	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:05:32:900	cb0	ETH - Total Speed: 83.334 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+19:05:32:915	cb0	ETH: GPU0 41.660 Mh/s, GPU1 41.674 Mh/s
+19:05:33:308	cb0	ETH: checking pool connection...
+19:05:33:308	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:05:33:355	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x2456e5294fc426ba8968cbf5d61fac12a8efb0fb44d461c30de0953332f4efba","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:05:35:533	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:05:35:533	1968	GPU 1 temp = 53, old fan speed = 0, new fan speed = 50 
+19:05:38:557	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:05:38:557	1968	GPU 1 temp = 53, old fan speed = 0, new fan speed = 50 
+19:05:40:954	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xd109b0a22392fc83fdd34b92877b37522fd97fc7ddbfeae20386458f9abaf4b7","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:05:40:954	cb0	ETH: 05/17/18-19:05:40 - New job from eth-eu1.nanopool.org:9999
+19:05:40:954	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:05:40:954	cb0	ETH - Total Speed: 83.353 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+19:05:40:969	cb0	ETH: GPU0 41.669 Mh/s, GPU1 41.683 Mh/s
+19:05:41:577	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:05:41:577	1968	GPU 1 temp = 53, old fan speed = 0, new fan speed = 50 
+19:05:43:313	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f79604", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:05:43:328	cb0	ETH: checking pool connection...
+19:05:43:328	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:05:43:422	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xd109b0a22392fc83fdd34b92877b37522fd97fc7ddbfeae20386458f9abaf4b7","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:05:44:597	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:05:44:597	1968	GPU 1 temp = 53, old fan speed = 0, new fan speed = 50 
+19:05:47:614	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:05:47:614	1968	GPU 1 temp = 53, old fan speed = 0, new fan speed = 50 
+19:05:47:614	1968	GPU0 t=50C fan=0%, GPU1 t=53C fan=0%
+19:05:50:226	1980	em hbt: 0, fm hbt: 16, 
+19:05:50:227	1980	watchdog - thread 0 (gpu0), hb time 313
+19:05:50:227	1980	watchdog - thread 1 (gpu0), hb time 672
+19:05:50:227	1980	watchdog - thread 2 (gpu1), hb time 328
+19:05:50:227	1980	watchdog - thread 3 (gpu1), hb time 688
+19:05:50:634	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:05:50:634	1968	GPU 1 temp = 53, old fan speed = 0, new fan speed = 50 
+19:05:53:339	cb0	ETH: checking pool connection...
+19:05:53:339	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:05:53:386	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xd109b0a22392fc83fdd34b92877b37522fd97fc7ddbfeae20386458f9abaf4b7","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:05:53:651	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:05:53:651	1968	GPU 1 temp = 53, old fan speed = 0, new fan speed = 50 
+19:05:56:672	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:05:56:672	1968	GPU 1 temp = 53, old fan speed = 0, new fan speed = 50 
+19:05:59:688	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:05:59:688	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:02:710	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:06:02:710	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:03:321	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f79b06", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:06:03:352	cb0	ETH: checking pool connection...
+19:06:03:352	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:06:03:430	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xd109b0a22392fc83fdd34b92877b37522fd97fc7ddbfeae20386458f9abaf4b7","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:06:05:728	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:06:05:728	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:08:748	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:06:08:748	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:11:769	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:06:11:769	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:13:370	cb0	ETH: checking pool connection...
+19:06:13:371	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:06:13:418	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xd109b0a22392fc83fdd34b92877b37522fd97fc7ddbfeae20386458f9abaf4b7","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:06:14:788	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:06:14:788	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:17:807	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:06:17:807	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:17:807	1968	GPU0 t=51C fan=0%, GPU1 t=54C fan=0%
+19:06:20:008	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x6ea4fcd5302377a1b682ba162978e9ace17251d6c9bc6354061785c61aa42d4a","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:06:20:008	cb0	ETH: 05/17/18-19:06:20 - New job from eth-eu1.nanopool.org:9999
+19:06:20:008	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:06:20:008	cb0	ETH - Total Speed: 83.393 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+19:06:20:023	cb0	ETH: GPU0 41.728 Mh/s, GPU1 41.665 Mh/s
+19:06:20:825	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:06:20:825	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:23:225	1980	em hbt: 0, fm hbt: 31, 
+19:06:23:225	1980	watchdog - thread 0 (gpu0), hb time 344
+19:06:23:225	1980	watchdog - thread 1 (gpu0), hb time 703
+19:06:23:225	1980	watchdog - thread 2 (gpu1), hb time 344
+19:06:23:225	1980	watchdog - thread 3 (gpu1), hb time 0
+19:06:23:334	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f87077", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:06:23:381	cb0	ETH: checking pool connection...
+19:06:23:381	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:06:23:445	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x6ea4fcd5302377a1b682ba162978e9ace17251d6c9bc6354061785c61aa42d4a","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:06:23:841	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:06:23:841	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:24:971	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x5e208a52c62d6b40e8b3a66a7bc97a64247bc608c511b4db85614a6f5005a686","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:06:24:971	cb0	ETH: 05/17/18-19:06:24 - New job from eth-eu1.nanopool.org:9999
+19:06:24:971	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:06:24:971	cb0	ETH - Total Speed: 83.119 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:01
+19:06:24:986	cb0	ETH: GPU0 41.444 Mh/s, GPU1 41.675 Mh/s
+19:06:25:722	1d04	checked ETH share on CPU, spent 4ms
+19:06:25:722	1d04	sent: {"id":11,"method":"eth_submitWork","params":["0xdd82163001ce1bbe","0x5e208a52c62d6b40e8b3a66a7bc97a64247bc608c511b4db85614a6f5005a686","0x076e92a754b3e87d96247e6ed12d3ed3ef99f0cc2723168069f67a56ecdc4a73"]}
+
+19:06:25:737	1d04	ETH: put share nonce dd82163001ce1bbe
+19:06:25:753	cb0	ETH: 05/17/18-19:06:25 - SHARE FOUND - (GPU 1)
+19:06:25:789	cb0	buf: {"jsonrpc":"2.0","id":11,"result":true}
+
+19:06:25:789	cb0	ETH: Share accepted (47 ms)!
+19:06:26:860	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:06:26:860	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:29:878	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:06:29:878	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:32:897	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:06:32:897	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:33:397	cb0	ETH: checking pool connection...
+19:06:33:397	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:06:33:444	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x5e208a52c62d6b40e8b3a66a7bc97a64247bc608c511b4db85614a6f5005a686","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:06:35:916	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:06:35:916	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:38:934	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:06:38:934	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:39:059	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x7248d4ba23c3223493c8be3c572b9d3d7ee8db23aa4a5724b9c063f7d5c7254c","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:06:39:059	cb0	ETH: 05/17/18-19:06:39 - New job from eth-eu1.nanopool.org:9999
+19:06:39:059	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:06:39:059	cb0	ETH - Total Speed: 73.864 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:01
+19:06:39:074	cb0	ETH: GPU0 41.663 Mh/s, GPU1 32.201 Mh/s
+19:06:41:958	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:06:41:958	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:43:316	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x2434f08d2d15c5e5789f3365e99b9756266ae330eb68863fe2606397403a3c17","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:06:43:316	cb0	ETH: 05/17/18-19:06:43 - New job from eth-eu1.nanopool.org:9999
+19:06:43:316	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:06:43:316	cb0	ETH - Total Speed: 83.398 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:01
+19:06:43:331	cb0	ETH: GPU0 41.730 Mh/s, GPU1 41.667 Mh/s
+19:06:43:347	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f88bd3", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:06:43:410	cb0	ETH: checking pool connection...
+19:06:43:410	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:06:43:978	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x2434f08d2d15c5e5789f3365e99b9756266ae330eb68863fe2606397403a3c17","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:06:44:969	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:06:44:969	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:47:985	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:06:47:985	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:47:985	1968	GPU0 t=51C fan=0%, GPU1 t=54C fan=0%
+19:06:51:012	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:06:51:012	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:06:53:435	cb0	ETH: checking pool connection...
+19:06:53:435	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:06:53:482	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x2434f08d2d15c5e5789f3365e99b9756266ae330eb68863fe2606397403a3c17","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:06:54:031	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:06:54:031	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:06:56:206	1980	em hbt: 0, fm hbt: 15, 
+19:06:56:206	1980	watchdog - thread 0 (gpu0), hb time 500
+19:06:56:206	1980	watchdog - thread 1 (gpu0), hb time 140
+19:06:56:206	1980	watchdog - thread 2 (gpu1), hb time 156
+19:06:56:206	1980	watchdog - thread 3 (gpu1), hb time 515
+19:06:57:051	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:06:57:051	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:00:069	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:07:00:069	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:03:087	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:07:03:087	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:03:373	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f7b989", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:07:03:451	cb0	ETH: checking pool connection...
+19:07:03:451	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:07:03:498	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x2434f08d2d15c5e5789f3365e99b9756266ae330eb68863fe2606397403a3c17","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:07:05:934	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x54df4d56b4d626b5dc5e16433e0359389f2318ef13b03c8f663b13b7ac839892","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:07:05:934	cb0	ETH: 05/17/18-19:07:05 - New job from eth-eu1.nanopool.org:9999
+19:07:05:934	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:07:05:934	cb0	ETH - Total Speed: 83.193 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:01
+19:07:05:934	cb0	ETH: GPU0 41.532 Mh/s, GPU1 41.661 Mh/s
+19:07:06:106	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:07:06:106	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:07:09:122	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:07:09:122	1968	GPU 1 temp = 54, old fan speed = 0, new fan speed = 50 
+19:07:12:141	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:07:12:141	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:13:465	cb0	ETH: checking pool connection...
+19:07:13:465	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:07:13:512	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x54df4d56b4d626b5dc5e16433e0359389f2318ef13b03c8f663b13b7ac839892","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:07:15:159	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:07:15:159	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:18:173	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:07:18:173	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:18:173	1968	GPU0 t=53C fan=0%, GPU1 t=55C fan=0%
+19:07:21:202	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:07:21:202	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:23:387	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f5ae0c", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:07:23:481	cb0	ETH: checking pool connection...
+19:07:23:481	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:07:23:528	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x54df4d56b4d626b5dc5e16433e0359389f2318ef13b03c8f663b13b7ac839892","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:07:24:216	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:07:24:216	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:27:234	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:07:27:234	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:29:205	1980	em hbt: 0, fm hbt: 15, 
+19:07:29:205	1980	watchdog - thread 0 (gpu0), hb time 719
+19:07:29:205	1980	watchdog - thread 1 (gpu0), hb time 344
+19:07:29:205	1980	watchdog - thread 2 (gpu1), hb time 406
+19:07:29:205	1980	watchdog - thread 3 (gpu1), hb time 31
+19:07:30:254	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:07:30:254	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:31:241	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xcab6325878d4790dd4aa5ff555fe6f6776eba3e9a7f3039e9c6c41fda283d089","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:07:31:241	cb0	ETH: 05/17/18-19:07:31 - New job from eth-eu1.nanopool.org:9999
+19:07:31:241	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:07:31:241	cb0	ETH - Total Speed: 83.205 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:02
+19:07:31:256	cb0	ETH: GPU0 41.467 Mh/s, GPU1 41.738 Mh/s
+19:07:33:273	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:07:33:273	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:33:492	cb0	ETH: checking pool connection...
+19:07:33:492	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:07:33:539	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xcab6325878d4790dd4aa5ff555fe6f6776eba3e9a7f3039e9c6c41fda283d089","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:07:36:293	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:07:36:293	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:39:310	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:07:39:310	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:42:324	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:07:42:324	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:43:404	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f505ce", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:07:43:513	cb0	ETH: checking pool connection...
+19:07:43:513	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:07:43:560	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xcab6325878d4790dd4aa5ff555fe6f6776eba3e9a7f3039e9c6c41fda283d089","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:07:45:347	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:07:45:347	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:45:409	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xefc6f2b3b56fc980917cc9d9d3bc857b53e3ccf71699a52a7121ec198b28cc28","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:07:45:409	cb0	ETH: 05/17/18-19:07:45 - New job from eth-eu1.nanopool.org:9999
+19:07:45:409	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:07:45:409	cb0	ETH - Total Speed: 83.116 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:02
+19:07:45:425	cb0	ETH: GPU0 41.451 Mh/s, GPU1 41.665 Mh/s
+19:07:48:365	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:07:48:365	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:48:365	1968	GPU0 t=52C fan=0%, GPU1 t=55C fan=0%
+19:07:51:384	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:07:51:384	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:07:53:527	cb0	ETH: checking pool connection...
+19:07:53:527	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:07:53:574	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xefc6f2b3b56fc980917cc9d9d3bc857b53e3ccf71699a52a7121ec198b28cc28","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:07:54:341	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x84c7951120a903aa3bd1e5d2b97212777fe969b47cdd8334f5a3cf446bb57e5e","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:07:54:341	cb0	ETH: 05/17/18-19:07:54 - New job from eth-eu1.nanopool.org:9999
+19:07:54:341	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:07:54:341	cb0	gpu #0 dt 0.17 (0%, good)
+19:07:54:341	cb0	gpu #1 dt 0.17 (0%, good)
+19:07:54:356	cb0	ETH - Total Speed: 83.145 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:02
+19:07:54:356	cb0	ETH: GPU0 41.458 Mh/s, GPU1 41.687 Mh/s
+19:07:54:404	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:07:54:404	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:07:54:810	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x064826745f55e8603e5abf8cd0cc33d8af6976d57229b14465af0b99c0e4bb96","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:07:54:810	cb0	ETH: 05/17/18-19:07:54 - New job from eth-eu1.nanopool.org:9999
+19:07:54:810	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:07:54:810	cb0	ETH - Total Speed: 83.306 Mh/s, Total Shares: 1, Rejected: 0, Time: 00:02
+19:07:54:825	cb0	ETH: GPU0 41.653 Mh/s, GPU1 41.653 Mh/s
+19:07:57:424	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:07:57:424	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:08:00:445	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:08:00:445	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:02:096	1980	em hbt: 16, fm hbt: 47, 
+19:08:02:096	1980	watchdog - thread 0 (gpu0), hb time 125
+19:08:02:096	1980	watchdog - thread 1 (gpu0), hb time 485
+19:08:02:096	1980	watchdog - thread 2 (gpu1), hb time 141
+19:08:02:096	1980	watchdog - thread 3 (gpu1), hb time 500
+19:08:03:414	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f48561", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:08:03:461	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:08:03:461	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:03:539	cb0	ETH: checking pool connection...
+19:08:03:539	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:08:03:586	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x064826745f55e8603e5abf8cd0cc33d8af6976d57229b14465af0b99c0e4bb96","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:08:06:475	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:08:06:475	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:09:490	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:08:09:490	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:08:12:507	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:08:12:507	1968	GPU 1 temp = 55, old fan speed = 0, new fan speed = 50 
+19:08:13:559	cb0	ETH: checking pool connection...
+19:08:13:559	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:08:13:606	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x064826745f55e8603e5abf8cd0cc33d8af6976d57229b14465af0b99c0e4bb96","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:08:15:520	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:08:15:520	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:18:536	1968	GPU 0 temp = 52, old fan speed = 0, new fan speed = 50 
+19:08:18:536	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:18:536	1968	GPU0 t=52C fan=0%, GPU1 t=56C fan=0%
+19:08:21:556	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:08:21:556	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:22:512	1ab4	checked ETH share on CPU, spent 4ms
+19:08:22:512	1ab4	sent: {"id":10,"method":"eth_submitWork","params":["0x1c7659e042bc647c","0x064826745f55e8603e5abf8cd0cc33d8af6976d57229b14465af0b99c0e4bb96","0xfaeafd17b36ca8377a55401a0f20a209b2e9fcd19470907743d7c0cca8e02686"]}
+
+19:08:22:528	1ab4	ETH: put share nonce 1c7659e042bc647c
+19:08:22:544	cb0	ETH: 05/17/18-19:08:22 - SHARE FOUND - (GPU 0)
+19:08:22:574	cb0	buf: {"jsonrpc":"2.0","id":10,"result":true}
+
+19:08:22:574	cb0	ETH: Share accepted (47 ms)!
+19:08:23:424	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f58e45", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:08:23:565	cb0	ETH: checking pool connection...
+19:08:23:565	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:08:23:612	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x064826745f55e8603e5abf8cd0cc33d8af6976d57229b14465af0b99c0e4bb96","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:08:24:571	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:08:24:571	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:27:590	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:08:27:590	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:30:610	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:08:30:610	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:33:585	cb0	ETH: checking pool connection...
+19:08:33:585	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:08:33:631	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x064826745f55e8603e5abf8cd0cc33d8af6976d57229b14465af0b99c0e4bb96","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:08:33:631	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:08:33:631	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:35:105	1980	em hbt: 0, fm hbt: 63, 
+19:08:35:105	1980	watchdog - thread 0 (gpu0), hb time 422
+19:08:35:105	1980	watchdog - thread 1 (gpu0), hb time 63
+19:08:35:105	1980	watchdog - thread 2 (gpu1), hb time 266
+19:08:35:105	1980	watchdog - thread 3 (gpu1), hb time 625
+19:08:36:127	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xa73671f6561ba2e85f71a3bb1a3fc9f8b6d1fe1d7d807d06a7017f3cfab9b37a","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:08:36:127	cb0	ETH: 05/17/18-19:08:36 - New job from eth-eu1.nanopool.org:9999
+19:08:36:136	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:08:36:136	cb0	ETH - Total Speed: 83.386 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:03
+19:08:36:136	cb0	ETH: GPU0 41.710 Mh/s, GPU1 41.676 Mh/s
+19:08:36:657	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:08:36:657	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:39:675	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:08:39:675	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:40:712	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xa2c2d9eb8c1ff876b047056aac8963b132f48e55e1bc26f8a2a0ef6bcfcee21b","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:08:40:712	cb0	ETH: 05/17/18-19:08:40 - New job from eth-eu1.nanopool.org:9999
+19:08:40:712	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:08:40:712	cb0	ETH - Total Speed: 83.128 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:03
+19:08:40:712	cb0	ETH: GPU0 41.447 Mh/s, GPU1 41.681 Mh/s
+19:08:42:695	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:08:42:695	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:43:449	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f4e59b", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:08:43:605	cb0	ETH: checking pool connection...
+19:08:43:605	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:08:43:652	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xa2c2d9eb8c1ff876b047056aac8963b132f48e55e1bc26f8a2a0ef6bcfcee21b","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:08:45:710	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:08:45:710	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:48:729	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:08:48:729	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:48:729	1968	GPU0 t=53C fan=0%, GPU1 t=56C fan=0%
+19:08:51:746	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:08:51:746	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:53:620	cb0	ETH: checking pool connection...
+19:08:53:620	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:08:53:667	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xa2c2d9eb8c1ff876b047056aac8963b132f48e55e1bc26f8a2a0ef6bcfcee21b","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:08:54:767	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:08:54:767	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:08:57:470	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xd7d642adcd13ec5bf011a292cfc30bf7310b9a937d98e52eea50e09389790e8c","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:08:57:470	cb0	ETH: 05/17/18-19:08:57 - New job from eth-eu1.nanopool.org:9999
+19:08:57:470	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:08:57:470	cb0	ETH - Total Speed: 83.324 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:03
+19:08:57:470	cb0	ETH: GPU0 41.646 Mh/s, GPU1 41.678 Mh/s
+19:08:57:787	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:08:57:787	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:09:00:807	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:00:807	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:09:03:463	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f7a668", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:09:03:510	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x47a0493a573bdb3d5c04ad685e0c54bc85ab4ba110ced57d042e949a09adf88a","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:09:03:510	cb0	ETH: 05/17/18-19:09:03 - New job from eth-eu1.nanopool.org:9999
+19:09:03:510	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:09:03:510	cb0	ETH - Total Speed: 83.339 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:03
+19:09:03:526	cb0	ETH: GPU0 41.667 Mh/s, GPU1 41.672 Mh/s
+19:09:03:640	cb0	ETH: checking pool connection...
+19:09:03:640	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:09:03:687	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x47a0493a573bdb3d5c04ad685e0c54bc85ab4ba110ced57d042e949a09adf88a","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:09:03:828	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:03:828	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:09:06:849	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:06:849	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:09:08:123	1980	em hbt: 0, fm hbt: 62, 
+19:09:08:123	1980	watchdog - thread 0 (gpu0), hb time 312
+19:09:08:123	1980	watchdog - thread 1 (gpu0), hb time 656
+19:09:08:123	1980	watchdog - thread 2 (gpu1), hb time 312
+19:09:08:123	1980	watchdog - thread 3 (gpu1), hb time 671
+19:09:09:870	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:09:870	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:09:12:889	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:12:889	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:09:13:648	cb0	ETH: checking pool connection...
+19:09:13:648	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:09:13:694	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x47a0493a573bdb3d5c04ad685e0c54bc85ab4ba110ced57d042e949a09adf88a","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:09:15:912	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:15:912	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:09:18:930	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:18:930	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:09:18:930	1968	GPU0 t=53C fan=0%, GPU1 t=56C fan=0%
+19:09:21:952	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:21:952	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:09:23:476	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f7f548", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:09:23:663	cb0	ETH: checking pool connection...
+19:09:23:663	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:09:23:715	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x47a0493a573bdb3d5c04ad685e0c54bc85ab4ba110ced57d042e949a09adf88a","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:09:24:971	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:24:971	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:09:26:637	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x60e19fca5b825a651f160f14faa7f32b800255225505e7b5d93cdd22edbb0650","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:09:26:637	cb0	ETH: 05/17/18-19:09:26 - New job from eth-eu1.nanopool.org:9999
+19:09:26:637	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:09:26:637	cb0	ETH - Total Speed: 83.328 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:04
+19:09:26:652	cb0	ETH: GPU0 41.667 Mh/s, GPU1 41.661 Mh/s
+19:09:27:992	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:27:992	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:09:31:011	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:31:011	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:09:33:685	cb0	ETH: checking pool connection...
+19:09:33:685	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:09:33:731	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x60e19fca5b825a651f160f14faa7f32b800255225505e7b5d93cdd22edbb0650","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:09:34:033	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:34:033	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:09:37:055	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:37:055	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:09:40:073	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:09:40:073	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:09:41:152	1980	em hbt: 0, fm hbt: 94, 
+19:09:41:152	1980	watchdog - thread 0 (gpu0), hb time 188
+19:09:41:152	1980	watchdog - thread 1 (gpu0), hb time 547
+19:09:41:152	1980	watchdog - thread 2 (gpu1), hb time 578
+19:09:41:152	1980	watchdog - thread 3 (gpu1), hb time 219
+19:09:43:090	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:43:090	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:09:43:497	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f77280", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:09:43:701	cb0	ETH: checking pool connection...
+19:09:43:701	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:09:43:748	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x60e19fca5b825a651f160f14faa7f32b800255225505e7b5d93cdd22edbb0650","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:09:46:107	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:46:107	1968	GPU 1 temp = 56, old fan speed = 0, new fan speed = 50 
+19:09:49:041	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x8d85bcaf056c8ec7ed938420eff27dd41769364c6241795690b00b936651d9c9","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:09:49:041	cb0	ETH: 05/17/18-19:09:49 - New job from eth-eu1.nanopool.org:9999
+19:09:49:041	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:09:49:041	cb0	ETH - Total Speed: 83.125 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:04
+19:09:49:041	cb0	ETH: GPU0 41.459 Mh/s, GPU1 41.666 Mh/s
+19:09:49:119	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:49:119	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:09:49:119	1968	GPU0 t=53C fan=0%, GPU1 t=57C fan=0%
+19:09:49:150	1d04	checked ETH share on CPU, spent 4ms
+19:09:49:150	1d04	sent: {"id":11,"method":"eth_submitWork","params":["0x87ef5c000039b558","0x8d85bcaf056c8ec7ed938420eff27dd41769364c6241795690b00b936651d9c9","0x54c1c6b3bb6961ead2efa80337468de5460204b25d7fb5199c766d651afc1aa6"]}
+
+19:09:49:150	1d04	ETH: put share nonce 87ef5c000039b558
+19:09:49:182	cb0	ETH: 05/17/18-19:09:49 - SHARE FOUND - (GPU 1)
+19:09:49:213	cb0	buf: {"jsonrpc":"2.0","id":11,"result":true}
+
+19:09:49:213	cb0	ETH: Share accepted (62 ms)!
+19:09:52:141	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:09:52:141	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:09:53:707	cb0	ETH: checking pool connection...
+19:09:53:707	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:09:53:754	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x8d85bcaf056c8ec7ed938420eff27dd41769364c6241795690b00b936651d9c9","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:09:54:145	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xf7d5f45a2b655581acebd9d4047d658707206281b93e7c2a747b6dbc82c50fc6","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:09:54:145	cb0	ETH: 05/17/18-19:09:54 - New job from eth-eu1.nanopool.org:9999
+19:09:54:145	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:09:54:145	cb0	ETH - Total Speed: 83.331 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:04
+19:09:54:145	cb0	ETH: GPU0 41.649 Mh/s, GPU1 41.682 Mh/s
+19:09:55:163	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:55:163	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:09:58:183	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:09:58:183	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:01:202	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:01:202	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:03:503	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f7b0e2", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:10:03:722	cb0	ETH: checking pool connection...
+19:10:03:722	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:10:03:769	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xf7d5f45a2b655581acebd9d4047d658707206281b93e7c2a747b6dbc82c50fc6","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:10:04:222	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:10:04:222	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:07:244	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:10:07:244	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:10:265	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:10:265	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:11:077	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x09fc1c6326a54b2f1e0bb9b6a2a1a8080326505faea0315a9cc3e37ac4b86e09","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:10:11:077	cb0	ETH: 05/17/18-19:10:11 - New job from eth-eu1.nanopool.org:9999
+19:10:11:077	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:10:11:077	cb0	ETH - Total Speed: 83.210 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:04
+19:10:11:092	cb0	ETH: GPU0 41.471 Mh/s, GPU1 41.739 Mh/s
+19:10:13:279	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:13:279	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:13:748	cb0	ETH: checking pool connection...
+19:10:13:748	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:10:13:795	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x09fc1c6326a54b2f1e0bb9b6a2a1a8080326505faea0315a9cc3e37ac4b86e09","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:10:14:013	1980	em hbt: 0, fm hbt: 0, 
+19:10:14:013	1980	watchdog - thread 0 (gpu0), hb time 422
+19:10:14:013	1980	watchdog - thread 1 (gpu0), hb time 62
+19:10:14:013	1980	watchdog - thread 2 (gpu1), hb time 422
+19:10:14:013	1980	watchdog - thread 3 (gpu1), hb time 78
+19:10:16:300	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:16:300	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:19:322	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:19:322	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:19:322	1968	GPU0 t=53C fan=0%, GPU1 t=57C fan=0%
+19:10:20:277	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x57cac434d15b7ef562aa9dbf3d6bb56fc148d98af72c63b82600d2b9e703ada6","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:10:20:277	cb0	ETH: 05/17/18-19:10:20 - New job from eth-eu1.nanopool.org:9999
+19:10:20:277	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:10:20:277	cb0	gpu #0 dt 0.18 (0%, good)
+19:10:20:293	cb0	gpu #1 dt 0.18 (0%, good)
+19:10:20:293	cb0	ETH - Total Speed: 83.157 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:04
+19:10:20:293	cb0	ETH: GPU0 41.477 Mh/s, GPU1 41.680 Mh/s
+19:10:22:344	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:10:22:344	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:23:531	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f79b79", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:10:23:765	cb0	ETH: checking pool connection...
+19:10:23:765	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:10:23:813	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x57cac434d15b7ef562aa9dbf3d6bb56fc148d98af72c63b82600d2b9e703ada6","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:10:25:363	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:25:363	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:28:386	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:28:386	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:28:998	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x922d305f76ba9653d94dddb2c1409040df930525c6f367413fd33c1206c6361c","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:10:28:998	cb0	ETH: 05/17/18-19:10:28 - New job from eth-eu1.nanopool.org:9999
+19:10:28:998	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:10:28:998	cb0	ETH - Total Speed: 83.160 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:05
+19:10:29:013	cb0	ETH: GPU0 41.482 Mh/s, GPU1 41.678 Mh/s
+19:10:31:398	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:31:398	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:33:771	cb0	ETH: checking pool connection...
+19:10:33:771	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:10:33:818	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x922d305f76ba9653d94dddb2c1409040df930525c6f367413fd33c1206c6361c","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:10:34:417	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:34:417	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:37:433	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:37:433	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:40:449	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:40:449	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:43:461	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:43:461	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:43:540	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f986aa", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:10:43:790	cb0	ETH: checking pool connection...
+19:10:43:790	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:10:43:837	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x922d305f76ba9653d94dddb2c1409040df930525c6f367413fd33c1206c6361c","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:10:46:487	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:46:487	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:46:988	1980	em hbt: 15, fm hbt: 46, 
+19:10:46:988	1980	watchdog - thread 0 (gpu0), hb time 93
+19:10:46:988	1980	watchdog - thread 1 (gpu0), hb time 453
+19:10:46:988	1980	watchdog - thread 2 (gpu1), hb time 125
+19:10:46:988	1980	watchdog - thread 3 (gpu1), hb time 484
+19:10:49:500	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:49:500	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:49:500	1968	GPU0 t=54C fan=0%, GPU1 t=57C fan=0%
+19:10:50:567	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xdcb9afeed8002fa7dd537702b4ccd0f88f296886cb3d96e6ee6727e71b1b04d9","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:10:50:567	cb0	ETH: 05/17/18-19:10:50 - New job from eth-eu1.nanopool.org:9999
+19:10:50:567	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:10:50:567	cb0	ETH - Total Speed: 83.443 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:05
+19:10:50:567	cb0	ETH: GPU0 41.717 Mh/s, GPU1 41.726 Mh/s
+19:10:52:527	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:52:527	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:53:812	cb0	ETH: checking pool connection...
+19:10:53:812	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:10:53:859	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xdcb9afeed8002fa7dd537702b4ccd0f88f296886cb3d96e6ee6727e71b1b04d9","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:10:55:538	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:10:55:538	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:10:58:556	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:10:58:556	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:11:01:573	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:11:01:573	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:11:03:554	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f7acc9", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:11:03:824	cb0	ETH: checking pool connection...
+19:11:03:824	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:11:03:871	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xdcb9afeed8002fa7dd537702b4ccd0f88f296886cb3d96e6ee6727e71b1b04d9","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:11:04:592	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:11:04:592	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:07:612	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:11:07:612	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:10:555	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xa659831a0f18fd643d4c7ea39b178bcf1f3039267bf809509fa044df0265d3f6","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:11:10:555	cb0	ETH: 05/17/18-19:11:10 - New job from eth-eu1.nanopool.org:9999
+19:11:10:555	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:11:10:555	cb0	ETH - Total Speed: 83.090 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:05
+19:11:10:570	cb0	ETH: GPU0 41.455 Mh/s, GPU1 41.635 Mh/s
+19:11:10:633	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:11:10:633	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:11:13:653	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:11:13:653	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:13:830	cb0	ETH: checking pool connection...
+19:11:13:830	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:11:13:877	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xa659831a0f18fd643d4c7ea39b178bcf1f3039267bf809509fa044df0265d3f6","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:11:16:673	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:11:16:673	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:11:17:165	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x058a1f487b5fa3078d257c9a33031e1040b73c54f43e89c2ab04886f4a80d2c2","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:11:17:165	cb0	ETH: 05/17/18-19:11:17 - New job from eth-eu1.nanopool.org:9999
+19:11:17:165	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:11:17:165	cb0	ETH - Total Speed: 83.346 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:05
+19:11:17:180	cb0	ETH: GPU0 41.668 Mh/s, GPU1 41.678 Mh/s
+19:11:19:695	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:11:19:695	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:11:19:695	1968	GPU0 t=54C fan=0%, GPU1 t=57C fan=0%
+19:11:20:012	1980	em hbt: 0, fm hbt: 47, 
+19:11:20:012	1980	watchdog - thread 0 (gpu0), hb time 328
+19:11:20:012	1980	watchdog - thread 1 (gpu0), hb time 687
+19:11:20:012	1980	watchdog - thread 2 (gpu1), hb time 328
+19:11:20:012	1980	watchdog - thread 3 (gpu1), hb time 687
+19:11:22:714	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:11:22:714	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:23:564	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f4c3b9", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:11:23:850	cb0	ETH: checking pool connection...
+19:11:23:850	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:11:24:180	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x058a1f487b5fa3078d257c9a33031e1040b73c54f43e89c2ab04886f4a80d2c2","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:11:25:733	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:11:25:733	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:26:317	258	checked ETH share on CPU, spent 4ms
+19:11:26:333	258	GPU #0 got incorrect share. If you see this warning often, make sure you did not overclock it too much!
+19:11:28:753	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:11:28:753	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:31:773	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:11:31:773	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:33:868	cb0	ETH: checking pool connection...
+19:11:33:868	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:11:33:915	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x058a1f487b5fa3078d257c9a33031e1040b73c54f43e89c2ab04886f4a80d2c2","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:11:34:789	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:11:34:789	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:37:809	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:11:37:809	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:40:829	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:11:40:829	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:43:584	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f51eab", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:11:43:850	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:11:43:850	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:43:882	cb0	ETH: checking pool connection...
+19:11:43:882	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:11:43:928	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x058a1f487b5fa3078d257c9a33031e1040b73c54f43e89c2ab04886f4a80d2c2","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:11:46:397	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x6de6f12aac8f1d2f08d5acc3a80621ee0f99c619c3ba27549b4fb67ed7f9127f","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:11:46:397	cb0	ETH: 05/17/18-19:11:46 - New job from eth-eu1.nanopool.org:9999
+19:11:46:397	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:11:46:397	cb0	ETH - Total Speed: 83.157 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:06
+19:11:46:412	cb0	ETH: GPU0 41.480 Mh/s, GPU1 41.677 Mh/s
+19:11:46:866	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:11:46:866	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:49:886	1968	GPU 0 temp = 54, old fan speed = 0, new fan speed = 50 
+19:11:49:886	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:49:886	1968	GPU0 t=55C fan=0%, GPU1 t=58C fan=0%
+19:11:52:905	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:11:52:905	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:53:030	1980	em hbt: 0, fm hbt: 47, 
+19:11:53:030	1980	watchdog - thread 0 (gpu0), hb time 532
+19:11:53:030	1980	watchdog - thread 1 (gpu0), hb time 188
+19:11:53:030	1980	watchdog - thread 2 (gpu1), hb time 188
+19:11:53:030	1980	watchdog - thread 3 (gpu1), hb time 547
+19:11:53:896	cb0	ETH: checking pool connection...
+19:11:53:896	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:11:53:943	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x6de6f12aac8f1d2f08d5acc3a80621ee0f99c619c3ba27549b4fb67ed7f9127f","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:11:55:924	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:11:55:924	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:11:58:944	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:11:58:944	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:01:960	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:01:960	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:03:595	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f7dd86", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:12:03:908	cb0	ETH: checking pool connection...
+19:12:03:908	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:12:03:954	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x6de6f12aac8f1d2f08d5acc3a80621ee0f99c619c3ba27549b4fb67ed7f9127f","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:12:04:977	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:04:977	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:07:999	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:07:999	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:11:015	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:11:015	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:13:937	cb0	ETH: checking pool connection...
+19:12:13:937	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:12:13:984	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x6de6f12aac8f1d2f08d5acc3a80621ee0f99c619c3ba27549b4fb67ed7f9127f","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:12:14:031	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:14:031	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:17:055	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:17:055	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:20:077	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:20:077	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:20:077	1968	GPU0 t=55C fan=0%, GPU1 t=58C fan=0%
+19:12:23:098	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:23:098	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:23:616	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f7d380", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:12:23:944	cb0	ETH: checking pool connection...
+19:12:23:944	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:12:23:991	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x6de6f12aac8f1d2f08d5acc3a80621ee0f99c619c3ba27549b4fb67ed7f9127f","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:12:26:119	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:26:119	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:26:667	1980	em hbt: 0, fm hbt: 0, 
+19:12:26:667	1980	watchdog - thread 0 (gpu0), hb time 172
+19:12:26:667	1980	watchdog - thread 1 (gpu0), hb time 531
+19:12:26:667	1980	watchdog - thread 2 (gpu1), hb time 547
+19:12:26:667	1980	watchdog - thread 3 (gpu1), hb time 187
+19:12:29:138	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:29:138	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:32:158	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:32:158	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:33:963	cb0	ETH: checking pool connection...
+19:12:33:963	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:12:34:135	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x6de6f12aac8f1d2f08d5acc3a80621ee0f99c619c3ba27549b4fb67ed7f9127f","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:12:35:184	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:35:184	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:38:205	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:38:205	1968	GPU 1 temp = 59, old fan speed = 0, new fan speed = 50 
+19:12:41:224	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:41:224	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:41:396	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x6de6f12aac8f1d2f08d5acc3a80621ee0f99c619c3ba27549b4fb67ed7f9127f","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:12:43:634	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f8b906", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:12:43:978	cb0	ETH: checking pool connection...
+19:12:43:978	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:12:44:024	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x6de6f12aac8f1d2f08d5acc3a80621ee0f99c619c3ba27549b4fb67ed7f9127f","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:12:44:243	1968	GPU 0 temp = 56, old fan speed = 0, new fan speed = 50 
+19:12:44:243	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:47:263	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:47:263	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:49:420	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x8a553259ef2a02f9ffd909682fc20d9474a8bf3d3c1798ed02355eaf020080ae","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:12:49:420	cb0	ETH: 05/17/18-19:12:49 - New job from eth-eu1.nanopool.org:9999
+19:12:49:420	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:12:49:420	cb0	ETH - Total Speed: 83.339 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:07
+19:12:49:436	cb0	ETH: GPU0 41.660 Mh/s, GPU1 41.679 Mh/s
+19:12:50:280	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:50:280	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:50:280	1968	GPU0 t=55C fan=0%, GPU1 t=58C fan=0%
+19:12:53:300	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:53:300	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:53:990	cb0	ETH: checking pool connection...
+19:12:53:990	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:12:54:036	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x8a553259ef2a02f9ffd909682fc20d9474a8bf3d3c1798ed02355eaf020080ae","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:12:56:321	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:56:321	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:59:341	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:12:59:341	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:12:59:545	1980	em hbt: 0, fm hbt: 15, 
+19:12:59:545	1980	watchdog - thread 0 (gpu0), hb time 93
+19:12:59:545	1980	watchdog - thread 1 (gpu0), hb time 453
+19:12:59:545	1980	watchdog - thread 2 (gpu1), hb time 468
+19:12:59:545	1980	watchdog - thread 3 (gpu1), hb time 109
+19:13:02:360	1968	GPU 0 temp = 56, old fan speed = 0, new fan speed = 50 
+19:13:02:360	1968	GPU 1 temp = 59, old fan speed = 0, new fan speed = 50 
+19:13:03:645	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x4f89bbd", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:13:03:957	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x4ff3f88c16f2b4ec294a5710644433cbaa112c4314239b36d18bd53e0d463c92","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:13:03:957	cb0	ETH: 05/17/18-19:13:03 - New job from eth-eu1.nanopool.org:9999
+19:13:03:957	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:13:03:957	cb0	ETH - Total Speed: 83.159 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:07
+19:13:03:972	cb0	ETH: GPU0 41.482 Mh/s, GPU1 41.677 Mh/s
+19:13:04:019	cb0	ETH: checking pool connection...
+19:13:04:019	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:13:04:066	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x4ff3f88c16f2b4ec294a5710644433cbaa112c4314239b36d18bd53e0d463c92","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:13:05:380	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:13:05:380	1968	GPU 1 temp = 59, old fan speed = 0, new fan speed = 50 
+19:13:08:395	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:13:08:395	1968	GPU 1 temp = 59, old fan speed = 0, new fan speed = 50 
+19:13:11:412	1968	GPU 0 temp = 55, old fan speed = 0, new fan speed = 50 
+19:13:11:412	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:13:14:040	cb0	ETH: checking pool connection...
+19:13:14:040	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:13:14:087	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x4ff3f88c16f2b4ec294a5710644433cbaa112c4314239b36d18bd53e0d463c92","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:13:14:431	1968	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
+19:13:14:431	1968	GPU 1 temp = 59, old fan speed = 0, new fan speed = 50 
+19:13:16:416	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xaad0fd26278f10d07414ff74d93a33877f0047bba120ae698d111843c2b808c5","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:13:16:416	cb0	ETH: 05/17/18-19:13:16 - New job from eth-eu1.nanopool.org:9999
+19:13:16:416	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:13:16:416	cb0	ETH - Total Speed: 83.388 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:07
+19:13:16:431	cb0	ETH: GPU0 41.720 Mh/s, GPU1 41.668 Mh/s
+19:13:17:881	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:13:17:928	1968	GPU 1 temp = 59, old fan speed = 0, new fan speed = 50 
+19:13:20:973	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:13:20:973	1968	GPU 1 temp = 59, old fan speed = 0, new fan speed = 50 
+19:13:20:973	1968	GPU0 t=51C fan=0%, GPU1 t=59C fan=0%
+19:13:23:666	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x27bf109", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:13:24:003	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:13:24:003	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:13:24:050	cb0	ETH: checking pool connection...
+19:13:24:050	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:13:24:097	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0xaad0fd26278f10d07414ff74d93a33877f0047bba120ae698d111843c2b808c5","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:13:27:020	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:13:27:020	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:13:27:739	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x85233ed2ff4a7936520369c47cee6a9da640b184dc5d213fbfa7e0df5a31d93a","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:13:27:739	cb0	ETH: 05/17/18-19:13:27 - New job from eth-eu1.nanopool.org:9999
+19:13:27:739	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:13:27:739	cb0	ETH - Total Speed: 41.682 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:08
+19:13:27:755	cb0	ETH: GPU0 0.000 Mh/s, GPU1 41.682 Mh/s
+19:13:30:046	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:13:30:046	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:13:30:796	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x94763a5dada751e3232c300bd762850918f3b56a1b56185703c11f5880df56d9","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:13:30:796	cb0	ETH: 05/17/18-19:13:30 - New job from eth-eu1.nanopool.org:9999
+19:13:30:796	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:13:30:796	cb0	gpu #1 dt 0.17 (0%, good)
+19:13:30:812	cb0	ETH - Total Speed: 41.685 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:08
+19:13:30:812	cb0	ETH: GPU0 0.000 Mh/s, GPU1 41.685 Mh/s
+19:13:32:299	1980	em hbt: 16, fm hbt: 31, 
+19:13:32:299	1980	watchdog - thread 0 (gpu0), hb time 14906
+19:13:32:299	1980	watchdog - thread 1 (gpu0), hb time 14906
+19:13:32:299	1980	watchdog - thread 2 (gpu1), hb time 438
+19:13:32:299	1980	watchdog - thread 3 (gpu1), hb time 63
+19:13:33:057	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:13:33:057	1968	GPU 1 temp = 59, old fan speed = 0, new fan speed = 50 
+19:13:34:068	cb0	ETH: checking pool connection...
+19:13:34:068	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:13:34:115	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x94763a5dada751e3232c300bd762850918f3b56a1b56185703c11f5880df56d9","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:13:36:079	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:13:36:079	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:13:39:103	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:13:39:103	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:13:42:118	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:13:42:118	1968	GPU 1 temp = 59, old fan speed = 0, new fan speed = 50 
+19:13:43:677	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x27be35f", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:13:44:084	cb0	ETH: checking pool connection...
+19:13:44:084	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:13:44:131	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x94763a5dada751e3232c300bd762850918f3b56a1b56185703c11f5880df56d9","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:13:45:143	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:13:45:143	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:13:45:672	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x057aa6648f78f7c85a7ff5832bbec17e6ef7a94f4863fb9f4e4879441fac157d","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:13:45:672	cb0	ETH: 05/17/18-19:13:45 - New job from eth-eu1.nanopool.org:9999
+19:13:45:672	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:13:45:672	cb0	ETH - Total Speed: 41.677 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:08
+19:13:45:687	cb0	ETH: GPU0 0.000 Mh/s, GPU1 41.677 Mh/s
+19:13:48:169	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:13:48:169	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:13:51:182	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:13:51:182	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:13:51:182	1968	GPU0 t=51C fan=0%, GPU1 t=58C fan=0%
+19:13:54:105	cb0	ETH: checking pool connection...
+19:13:54:105	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:13:54:152	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x057aa6648f78f7c85a7ff5832bbec17e6ef7a94f4863fb9f4e4879441fac157d","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:13:54:199	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:13:54:199	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:13:57:211	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:13:57:211	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:14:00:222	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:14:00:222	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:14:03:234	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:14:03:234	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:14:03:697	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x27bf6f6", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:14:04:119	cb0	ETH: checking pool connection...
+19:14:04:119	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:14:04:166	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x057aa6648f78f7c85a7ff5832bbec17e6ef7a94f4863fb9f4e4879441fac157d","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:14:05:004	1980	em hbt: 0, fm hbt: 47, 
+19:14:05:004	1980	watchdog - thread 0 (gpu0), hb time 47609
+19:14:05:004	1980	watchdog - thread 1 (gpu0), hb time 47609
+19:14:05:004	1980	watchdog - thread 2 (gpu1), hb time 391
+19:14:05:004	1980	watchdog - thread 3 (gpu1), hb time 31
+19:14:06:248	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:14:06:248	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:14:09:263	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:14:09:263	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:14:12:281	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:14:12:281	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:14:14:141	cb0	ETH: checking pool connection...
+19:14:14:141	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:14:14:188	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x057aa6648f78f7c85a7ff5832bbec17e6ef7a94f4863fb9f4e4879441fac157d","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:14:15:292	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:14:15:292	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:14:18:317	1968	GPU 0 temp = 51, old fan speed = 0, new fan speed = 50 
+19:14:18:317	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:14:21:329	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:14:21:329	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:14:21:329	1968	GPU0 t=50C fan=0%, GPU1 t=58C fan=0%
+19:14:23:705	cb0	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x27ce107", "0x00000000000000000000000000000000000000000000000000000000804a1828"]}
+
+19:14:24:143	cb0	ETH: checking pool connection...
+19:14:24:143	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:14:24:190	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x057aa6648f78f7c85a7ff5832bbec17e6ef7a94f4863fb9f4e4879441fac157d","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:14:24:346	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:14:24:346	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:14:27:358	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:14:27:358	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:14:29:436	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x28a474ad45c166bfc3436cc8718e67b8c88a3806fe458ddb00800e5393d46617","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:14:29:436	cb0	ETH: 05/17/18-19:14:29 - New job from eth-eu1.nanopool.org:9999
+19:14:29:436	cb0	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+19:14:29:436	cb0	ETH - Total Speed: 41.678 Mh/s, Total Shares: 3, Rejected: 0, Time: 00:09
+19:14:29:451	cb0	ETH: GPU0 0.000 Mh/s, GPU1 41.678 Mh/s
+19:14:30:382	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:14:30:382	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:14:33:407	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:14:33:407	1968	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:14:34:167	cb0	ETH: checking pool connection...
+19:14:34:167	cb0	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:14:34:214	cb0	buf: {"jsonrpc":"2.0","id":0,"result":["0x28a474ad45c166bfc3436cc8718e67b8c88a3806fe458ddb00800e5393d46617","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+19:14:36:421	1968	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:14:36:421	1968	GPU 1 temp = 58, old fan speed = 0, new fan speed = 50 
+19:14:37:681	1980	em hbt: 0, fm hbt: 0, 
+19:14:37:681	1980	watchdog - thread 0 (gpu0), hb time 80281
+19:14:37:681	1980	WATCHDOG: GPU 0 hangs in OpenCL call, exit
+19:14:37:681	1980	watchdog - thread 1 (gpu0), hb time 80281
+19:14:37:697	1980	WATCHDOG: GPU 0 hangs in OpenCL call, exit
+19:14:37:697	1980	watchdog - thread 2 (gpu1), hb time 32
+19:14:37:697	1980	watchdog - thread 3 (gpu1), hb time 391
+19:14:37:697	42c	GPU 0 temp = 50, old fan speed = 0, new fan speed = 50 
+19:14:37:713	42c	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+19:14:37:822	42c	Quit, please wait...
+19:14:44:917	1980	Restarting OK, exit...
+
+

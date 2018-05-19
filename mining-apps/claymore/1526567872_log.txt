@@ -1,0 +1,28 @@
+16:37:52:182	26c0	Check and remove old log files...
+16:37:52:182	26c0	args: -epool eth-eu1.nanopool.org:9999 -mport 0 -ewal 0xA0711F662E0fb2faCC1F09F061eA27d2c65cbF4D/gaming-rig/EMAIL -gser 2 -mode 1 -epsw x -platform 1 -dcri 15 -fanmin 50 -fanmax 100 -tt 75 -cclock 1407 -cvddc 950 -mvvdc 950 -mclock 900 
+16:37:52:182	26c0	
+16:37:52:182	26c0	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+16:37:52:182	26c0	บ                Claymore's Dual GPU Miner - v11.7               บ
+16:37:52:182	26c0	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+16:37:52:197	26c0	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+16:37:52:197	26c0	
+16:37:52:197	26c0	b583 
+16:37:52:416	26c0	ETH: 1 pool is specified
+16:37:52:416	26c0	Main Ethereum pool is eth-eu1.nanopool.org:9999
+16:37:52:572	26c0	OpenCL platform: AMD Accelerated Parallel Processing
+16:37:52:588	26c0	OpenCL initializing...
+
+16:37:52:588	26c0	AMD Cards available: 2 
+16:37:52:588	26c0	GPU #0: gfx900 (Radeon RX Vega), 8176 MB available, 56 compute units (pci bus 11:0:0)
+16:37:52:588	26c0	GPU #0 recognized as Vega
+16:37:52:588	26c0	GPU #1: gfx900 (Radeon RX Vega), 8176 MB available, 56 compute units (pci bus 14:0:0)
+16:37:52:588	26c0	GPU #1 recognized as Vega
+16:37:52:604	26c0	POOL/SOLO version
+16:37:52:604	26c0	Platform: Windows
+16:37:52:666	26c0	start building OpenCL program for GPU 0...
+16:37:52:885	26c0	done
+16:37:53:122	26c0	start building OpenCL program for GPU 1...
+16:37:53:325	26c0	done
+16:37:53:575	26c0	GPU #0: algorithm ASM 1
+16:37:53:606	26c0	GPU #1: algorithm ASM 1
+16:37:53:606	26c0	Total cards: 2 

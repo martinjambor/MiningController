@@ -1,0 +1,103 @@
+16:36:19:344	1324	Check and remove old log files...
+16:36:19:344	1324	args: -epool eth-eu1.nanopool.org:9999 -mport 0 -ewal 0xA0711F662E0fb2faCC1F09F061eA27d2c65cbF4D/gaming-rig/EMAIL -gser 2 -mode 1 -epsw x -platform 1 -dcri 15 -fanmin 50 -fanmax 100 -tt 75 -cclock 1407 -cvddc 950 
+16:36:19:344	1324	
+16:36:19:344	1324	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+16:36:19:344	1324	บ                Claymore's Dual GPU Miner - v11.7               บ
+16:36:19:360	1324	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+16:36:19:360	1324	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+16:36:19:360	1324	
+16:36:19:360	1324	b583 
+16:36:19:578	1324	ETH: 1 pool is specified
+16:36:19:578	1324	Main Ethereum pool is eth-eu1.nanopool.org:9999
+16:36:19:703	1324	OpenCL platform: AMD Accelerated Parallel Processing
+16:36:19:703	1324	OpenCL initializing...
+
+16:36:19:703	1324	AMD Cards available: 2 
+16:36:19:719	1324	GPU #0: gfx900 (Radeon RX Vega), 8176 MB available, 56 compute units (pci bus 11:0:0)
+16:36:19:719	1324	GPU #0 recognized as Vega
+16:36:19:719	1324	GPU #1: gfx900 (Radeon RX Vega), 8176 MB available, 56 compute units (pci bus 14:0:0)
+16:36:19:719	1324	GPU #1 recognized as Vega
+16:36:19:719	1324	POOL/SOLO version
+16:36:19:719	1324	Platform: Windows
+16:36:19:781	1324	start building OpenCL program for GPU 0...
+16:36:20:000	1324	done
+16:36:20:232	1324	start building OpenCL program for GPU 1...
+16:36:20:435	1324	done
+16:36:20:685	1324	GPU #0: algorithm ASM 1
+16:36:20:716	1324	GPU #1: algorithm ASM 1
+16:36:20:732	1324	Total cards: 2 
+16:36:24:794	1324	No NVIDIA cards in the list, NVML library will not be used.
+16:36:25:274	1324	SSL: Imported 38 certificates from local storage
+16:36:25:289	23b8	ETH: Stratum - connecting to 'eth-eu1.nanopool.org' <51.15.89.69> port 9999 (unsecure)
+16:36:25:320	23b8	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0xA0711F662E0fb2faCC1F09F061eA27d2c65cbF4D/gaming-rig/EMAIL", "x"], "id": 2, "method": "eth_submitLogin"}
+
+16:36:25:320	23b8	ETH: Stratum - Connected (eth-eu1.nanopool.org:9999) (unsecure)
+16:36:25:399	1324	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+16:36:25:399	23b8	buf: {"jsonrpc":"2.0","id":2,"result":true}
+{"jsonrpc":"2.0","id":0,"result":["0x752e7aa8127f25922c33a999128c247f7c5c060b573514e63b4aef2e3af359fb","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+16:36:25:399	23b8	ETH: Authorized
+16:36:25:399	1324	ETH: eth-proxy stratum mode
+16:36:25:399	23b8	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+16:36:25:399	1324	Watchdog enabled
+16:36:25:399	23b8	remove first packet 243
+16:36:25:414	1324	
+16:36:25:430	1e6c	Setting DAG epoch #187...
+16:36:25:461	23b8	buf: {"jsonrpc":"2.0","id":0,"result":["0x752e7aa8127f25922c33a999128c247f7c5c060b573514e63b4aef2e3af359fb","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+16:36:25:477	2094	Automatic detection of best -dcri values started, please wait...
+
+16:36:25:539	2094	Automatic detection of best -dcri values is already in progress, please wait...
+16:36:25:602	2094	All AMD cards use Compute Mode now, please reboot the system to apply it
+16:36:25:602	23c4	GPU 0 temp = 36, old fan speed = 0, new fan speed = 50 
+16:36:25:602	2094	CrossFire is enabled, it will be disabled now.
+16:36:25:602	2094	GPU 0 temp = 36, old fan speed = 0, new fan speed = 25 
+16:36:25:617	2094	
+16:36:25:617	2094	Please restart miner
+16:36:25:617	2094	
+
+16:36:28:413	1e6c	Setting DAG epoch #187 for GPU1
+16:36:28:738	23c4	GPU 0 temp = 35, old fan speed = 0, new fan speed = 50 
+16:36:28:747	1e6c	Create GPU buffer for GPU1
+16:36:28:764	1e6c	GPU1, OpenCL error -4 - cannot write buffer for DAG
+16:36:28:792	da8	Setting DAG epoch #187 for GPU0
+16:36:28:898	da8	Create GPU buffer for GPU0
+16:36:28:905	da8	GPU0, OpenCL error -4 - cannot write buffer for DAG
+16:36:31:754	23c4	GPU 0 temp = 35, old fan speed = 0, new fan speed = 50 
+16:36:31:801	1e6c	Set global fail flag, failed GPU1
+16:36:31:801	1e6c	GPU 1 failed
+16:36:31:801	26e8	Setting DAG epoch #187 for GPU1
+16:36:31:801	26e8	GPU1, OpenCL error -4 - cannot write buffer for DAG
+16:36:31:926	da8	Set global fail flag, failed GPU0
+16:36:31:926	da8	GPU 0 failed
+16:36:31:926	25d8	Setting DAG epoch #187 for GPU0
+16:36:31:926	25d8	GPU0, OpenCL error -4 - cannot write buffer for DAG
+16:36:34:767	23c4	GPU 0 temp = 36, old fan speed = 0, new fan speed = 50 
+16:36:34:830	26e8	Set global fail flag, failed GPU1
+16:36:34:830	26e8	GPU 1 failed
+16:36:34:955	25d8	Set global fail flag, failed GPU0
+16:36:34:955	25d8	GPU 0 failed
+16:36:35:428	23b8	ETH: checking pool connection...
+16:36:35:428	23b8	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+16:36:35:478	23b8	buf: {"jsonrpc":"2.0","id":0,"result":["0x752e7aa8127f25922c33a999128c247f7c5c060b573514e63b4aef2e3af359fb","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+16:36:36:715	2094	Press 0..9,a,b,c key to select GPU for -dcri adjustment, press X again to clear selection...
+16:36:37:779	23c4	GPU 0 temp = 36, old fan speed = 0, new fan speed = 50 
+16:36:39:344	2094	Automatic detection of best -dcri values is already in progress, please wait...
+16:36:40:346	23b8	buf: {"jsonrpc":"2.0","id":0,"result":["0x9b7b3856b7fc2a4acada1bfe78032425504c994e06a62549447ef68188be6598","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+16:36:40:346	23b8	ETH: 05/17/18-16:36:40 - New job from eth-eu1.nanopool.org:9999
+16:36:40:346	23b8	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+16:36:40:346	23b8	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+16:36:40:346	23b8	ETH: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s
+16:36:40:787	23c4	GPU 0 temp = 36, old fan speed = 0, new fan speed = 50 
+16:36:41:131	2094	All AMD cards use Compute Mode already
+16:36:41:131	2094	CrossFire is disabled already
+16:36:42:592	23b8	buf: {"jsonrpc":"2.0","id":0,"result":["0xa1b5087549add2c08b843ade3c5dc8710c27640112e42a76dcb3b8b9688749a8","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+16:36:42:592	23b8	ETH: 05/17/18-16:36:42 - New job from eth-eu1.nanopool.org:9999
+16:36:42:592	23b8	target: 0x000000006df37f67 (diff: 10000MH), epoch 187(2.46GB)
+16:36:42:592	23b8	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+16:36:42:592	23b8	ETH: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s

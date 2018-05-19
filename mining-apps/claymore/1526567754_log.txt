@@ -1,0 +1,59 @@
+16:35:54:390	2388	Check and remove old log files...
+16:35:54:390	2388	args: -epool eth-eu1.nanopool.org:9999 -mport 0 -ewal 0xA0711F662E0fb2faCC1F09F061eA27d2c65cbF4D/gaming-rig/EMAIL -gser 2 -mode 1 -epsw x -platform 1 -dcri 15 -fanmin 50 -fanmax 100 -tt 75 -cclock 1407 -cvddc 950 
+16:35:54:390	2388	
+16:35:54:390	2388	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+16:35:54:390	2388	บ                Claymore's Dual GPU Miner - v11.7               บ
+16:35:54:406	2388	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+16:35:54:406	2388	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+16:35:54:406	2388	
+16:35:54:406	2388	b583 
+16:35:54:625	2388	ETH: 1 pool is specified
+16:35:54:625	2388	Main Ethereum pool is eth-eu1.nanopool.org:9999
+16:35:54:750	2388	OpenCL platform: AMD Accelerated Parallel Processing
+16:35:54:750	2388	OpenCL initializing...
+
+16:35:54:750	2388	AMD Cards available: 2 
+16:35:54:750	2388	GPU #0: gfx900 (Radeon RX Vega), 8176 MB available, 56 compute units (pci bus 11:0:0)
+16:35:54:765	2388	GPU #0 recognized as Vega
+16:35:54:765	2388	GPU #1: gfx900 (Radeon RX Vega), 8176 MB available, 56 compute units (pci bus 14:0:0)
+16:35:54:765	2388	GPU #1 recognized as Vega
+16:35:54:765	2388	POOL/SOLO version
+16:35:54:765	2388	Platform: Windows
+16:35:54:852	2388	start building OpenCL program for GPU 0...
+16:35:55:060	2388	done
+16:35:55:294	2388	start building OpenCL program for GPU 1...
+16:35:55:497	2388	done
+16:35:55:747	2388	GPU #0: algorithm ASM 1
+16:35:55:778	2388	GPU #1: algorithm ASM 1
+16:35:55:794	2388	Total cards: 2 
+16:35:59:867	2388	No NVIDIA cards in the list, NVML library will not be used.
+16:36:00:365	2388	SSL: Imported 38 certificates from local storage
+16:36:00:397	27f8	ETH: Stratum - connecting to 'eth-eu1.nanopool.org' <51.15.89.69> port 9999 (unsecure)
+16:36:00:428	27f8	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0xA0711F662E0fb2faCC1F09F061eA27d2c65cbF4D/gaming-rig/EMAIL", "x"], "id": 2, "method": "eth_submitLogin"}
+
+16:36:00:443	27f8	ETH: Stratum - Connected (eth-eu1.nanopool.org:9999) (unsecure)
+16:36:00:490	2388	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+16:36:00:490	2388	ETH: eth-proxy stratum mode
+16:36:00:490	2388	Watchdog enabled
+16:36:00:490	2388	
+16:36:00:506	27f8	buf: {"jsonrpc":"2.0","id":2,"result":true}
+{"jsonrpc":"2.0","id":0,"result":["0x48f9c6b56cb326095f1a0750119acc077716a6fc5c1bf3902b8052eae798c655","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+16:36:00:506	27f8	ETH: Authorized
+16:36:00:506	27f8	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+16:36:00:506	27f8	remove first packet 243
+16:36:00:522	23b8	Setting DAG epoch #187...
+16:36:00:568	27f8	buf: {"jsonrpc":"2.0","id":0,"result":["0x48f9c6b56cb326095f1a0750119acc077716a6fc5c1bf3902b8052eae798c655","0xe6073b5528bd0132af704e709c5723848c28e74e1d250eff85fc89e916b8515e","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+16:36:00:646	1e6c	GPU 0 temp = 36, old fan speed = 0, new fan speed = 81 
+16:36:02:325	23b8	Setting DAG epoch #187 for GPU1
+16:36:02:325	23b8	Create GPU buffer for GPU1
+16:36:03:493	151c	GPU 0 temp = 36, old fan speed = 0, new fan speed = 62 
+16:36:03:603	151c	Quit, please wait...
+16:36:04:353	23b8	GPU1 DAG creation time - 2005 ms
+16:36:04:353	23b8	Setting DAG epoch #187 for GPU1 done
+16:36:04:353	17fc	Setting DAG epoch #187 for GPU0
+16:36:04:369	17fc	Create GPU buffer for GPU0
+16:36:07:093	17fc	GPU0 DAG creation time - 2076 ms
+16:36:07:093	17fc	Setting DAG epoch #187 for GPU0 done

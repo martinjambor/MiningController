@@ -1,0 +1,36 @@
+01:08:53:003	104	Check and remove old log files...
+01:08:53:003	104	args: -epool eth-eu1.nanopool.org:9999 -mport 0 -ewal 0xA0711F662E0fb2faCC1F09F061eA27d2c65cbF4D/gaming-rig/EMAIL -gser 2 -mode 1 -epsw x -platform 1 -dcri 6 -fanmin 50 -fanmax 100 -tt 75 -cclock 1000 -cvddc 900 -mvddc 950 -mclock 950 
+01:08:53:003	104	
+01:08:53:003	104	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+01:08:53:018	104	บ                Claymore's Dual GPU Miner - v11.7               บ
+01:08:53:018	104	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+01:08:53:018	104	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+01:08:53:034	104	
+01:08:53:034	104	b583 
+01:08:53:253	104	ETH: 1 pool is specified
+01:08:53:253	104	Main Ethereum pool is eth-eu1.nanopool.org:9999
+01:08:53:393	104	OpenCL platform: AMD Accelerated Parallel Processing
+01:08:53:409	104	OpenCL initializing...
+
+01:08:53:409	104	AMD Cards available: 2 
+01:08:53:409	104	GPU #0: gfx900 (Radeon RX Vega), 8176 MB available, 56 compute units (pci bus 11:0:0)
+01:08:53:409	104	GPU #0 recognized as Vega
+01:08:53:409	104	GPU #1: gfx900 (Radeon RX Vega), 8176 MB available, 56 compute units (pci bus 14:0:0)
+01:08:53:425	104	GPU #1 recognized as Vega
+01:08:53:425	104	POOL/SOLO version
+01:08:53:425	104	Platform: Windows
+01:08:53:472	104	start building OpenCL program for GPU 0...
+01:09:26:081	25a4	
+01:09:58:909	25a4	
+01:10:31:737	25a4	
+01:11:04:565	25a4	
+01:11:37:393	25a4	
+01:12:10:220	25a4	
+01:12:43:049	25a4	
+01:13:15:877	25a4	
+01:13:48:705	25a4	
+01:14:21:533	25a4	
+01:14:21:533	25a4	Miner cannot initialize for 5 minutes, need to restart miner!
+01:14:28:786	25a4	Restarting OK, exit...
+
+
