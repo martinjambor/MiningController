@@ -1,0 +1,80 @@
+16:34:32:778	27ec	Check and remove old log files...
+16:34:32:782	27ec	args: -epool eth-eu1.nanopool.org:9999 -mport 0 -ewal 0xA0711F662E0fb2faCC1F09F061eA27d2c65cbF4D/gaming-rig/EMAIL -gser 2 -mode 1 -epsw x -platform 1 -dcri 6 -fanmin 50 -fanmax 100 -tt 75 -di 1 -cclock 0,1000 -cvddc 0,900 -mvddc 0,950 -mclock 0,940 
+16:34:32:785	27ec	
+16:34:32:789	27ec	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+16:34:32:792	27ec	บ                Claymore's Dual GPU Miner - v11.7               บ
+16:34:32:795	27ec	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+16:34:32:803	27ec	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+16:34:32:807	27ec	
+16:34:32:810	27ec	b583 
+16:34:33:019	27ec	ETH: 1 pool is specified
+16:34:33:023	27ec	Main Ethereum pool is eth-eu1.nanopool.org:9999
+16:34:33:208	27ec	OpenCL platform: AMD Accelerated Parallel Processing
+16:34:33:213	27ec	OpenCL initializing...
+
+16:34:33:217	27ec	AMD Cards available: 2 
+16:34:33:220	27ec	GPU #0: gfx900 (Radeon RX Vega), 8176 MB available, 56 compute units (pci bus 14:0:0)
+16:34:33:223	27ec	GPU #0 recognized as Vega
+16:34:33:227	27ec	POOL/SOLO version
+16:34:33:230	27ec	Platform: Windows
+16:34:33:303	27ec	start building OpenCL program for GPU 0...
+16:34:33:533	27ec	done
+16:34:33:772	27ec	GPU #0: algorithm ASM 1
+16:34:33:776	27ec	Total cards: 1 
+16:34:37:787	27ec	No NVIDIA cards in the list, NVML library will not be used.
+16:34:38:179	27ec	SSL: Imported 39 certificates from local storage
+16:34:38:191	1750	ETH: Stratum - connecting to 'eth-eu1.nanopool.org' <51.15.39.186> port 9999 (unsecure)
+16:34:38:231	1750	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0xA0711F662E0fb2faCC1F09F061eA27d2c65cbF4D/gaming-rig/EMAIL", "x"], "id": 2, "method": "eth_submitLogin"}
+
+16:34:38:235	1750	ETH: Stratum - Connected (eth-eu1.nanopool.org:9999) (unsecure)
+16:34:38:284	27ec	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+16:34:38:289	27ec	ETH: eth-proxy stratum mode
+16:34:38:292	27ec	Watchdog enabled
+16:34:38:295	1750	buf: {"jsonrpc":"2.0","id":2,"result":true}
+{"jsonrpc":"2.0","id":0,"result":["0x80b247bc2429ebba0cca39b74dc9dd3fc913930664e58b0171f04b511bd7da6e","0xc16796d9b504e2ac0305bf673638b84a7d0278ba389d82377cde63edcca1a1bb","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+16:34:38:301	1750	ETH: Authorized
+16:34:38:300	27ec	
+16:34:38:305	1750	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+16:34:38:313	1750	remove first packet 243
+16:34:38:347	1750	buf: {"jsonrpc":"2.0","id":0,"result":["0x80b247bc2429ebba0cca39b74dc9dd3fc913930664e58b0171f04b511bd7da6e","0xc16796d9b504e2ac0305bf673638b84a7d0278ba389d82377cde63edcca1a1bb","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+16:34:38:408	147c	Setting DAG epoch #188...
+16:34:39:031	2308	GPU 0 temp = 36, old fan speed = 0, new fan speed = 50 
+16:34:40:368	147c	Setting DAG epoch #188 for GPU0
+16:34:40:372	147c	Create GPU buffer for GPU0
+16:34:41:479	1750	buf: {"jsonrpc":"2.0","id":0,"result":["0x7e5ed8da796bd2ef0abb163a60b9360093f08b030ab872eeadcee8eb31e1b3b3","0xc16796d9b504e2ac0305bf673638b84a7d0278ba389d82377cde63edcca1a1bb","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+16:34:41:483	1750	ETH: 05/20/18-16:34:41 - New job from eth-eu1.nanopool.org:9999
+16:34:41:487	1750	target: 0x000000006df37f67 (diff: 10000MH), epoch 188(2.47GB)
+16:34:41:490	1750	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+16:34:41:493	1750	ETH: GPU0 0.000 Mh/s
+16:34:42:037	2308	GPU 0 temp = 38, old fan speed = 0, new fan speed = 50 
+16:34:42:938	147c	GPU0 DAG creation time - 2543 ms
+16:34:42:943	147c	Setting DAG epoch #188 for GPU0 done
+16:34:45:042	2308	GPU 0 temp = 39, old fan speed = 0, new fan speed = 50 
+16:34:48:048	2308	GPU 0 temp = 39, old fan speed = 0, new fan speed = 50 
+16:34:48:322	1750	ETH: checking pool connection...
+16:34:48:326	1750	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+16:34:48:370	1750	buf: {"jsonrpc":"2.0","id":0,"result":["0x7e5ed8da796bd2ef0abb163a60b9360093f08b030ab872eeadcee8eb31e1b3b3","0xc16796d9b504e2ac0305bf673638b84a7d0278ba389d82377cde63edcca1a1bb","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+16:34:50:780	1750	buf: {"jsonrpc":"2.0","id":0,"result":["0x17edaa3b3c31c21aa0546389a02e05a40679db6335d89856c73752c5e1efaa96","0xc16796d9b504e2ac0305bf673638b84a7d0278ba389d82377cde63edcca1a1bb","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+16:34:50:784	1750	ETH: 05/20/18-16:34:50 - New job from eth-eu1.nanopool.org:9999
+16:34:50:789	1750	target: 0x000000006df37f67 (diff: 10000MH), epoch 188(2.47GB)
+16:34:50:793	1750	ETH - Total Speed: 41.161 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+16:34:50:798	1750	ETH: GPU0 41.161 Mh/s
+16:34:51:053	2308	GPU 0 temp = 39, old fan speed = 0, new fan speed = 50 
+16:34:54:058	2308	GPU 0 temp = 39, old fan speed = 0, new fan speed = 50 
+16:34:57:063	2308	GPU 0 temp = 39, old fan speed = 0, new fan speed = 50 
+16:34:58:322	1750	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x279f04e", "0x000000000000000000000000000000000000000000000000000000005ba9bacf"]}
+
+16:34:58:337	1750	ETH: checking pool connection...
+16:34:58:340	1750	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+16:34:58:424	1750	buf: {"jsonrpc":"2.0","id":0,"result":["0x17edaa3b3c31c21aa0546389a02e05a40679db6335d89856c73752c5e1efaa96","0xc16796d9b504e2ac0305bf673638b84a7d0278ba389d82377cde63edcca1a1bb","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+16:34:59:324	2618	GPU 0 temp = 39, old fan speed = 0, new fan speed = 50 
+16:34:59:429	2618	Quit, please wait...

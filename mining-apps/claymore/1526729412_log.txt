@@ -3528,3 +3528,64 @@
 
 14:00:53:656	5e4	GPU 0 temp = 53, old fan speed = 0, new fan speed = 50 
 14:00:53:656	5e4	GPU 1 temp = 57, old fan speed = 0, new fan speed = 50 
+14:54:00:695	5e4	GPU0 t=53C fan=0%, GPU1 t=57C fan=0%
+14:00:56:825	aa0	buf: {"jsonrpc":"2.0","id":0,"result":["0x51fd9bc40881781565e8e9e7cccc69dafa302b69ad642a1ed9887e446e17e4c1","0xc16796d9b504e2ac0305bf673638b84a7d0278ba389d82377cde63edcca1a1bb","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+14:01:14:060	9bc	checked ETH share on CPU, spent 4ms
+14:54:00:710	9bc	GPU #0 got incorrect share. If you see this warning often, make sure you did not overclock it too much!
+14:54:00:710	b6c	DevFee: ETH: Stratum - connecting to 'eth-eu1.nanopool.org' <213.32.74.230> port 9999 (unsecure)
+14:01:18:166	56c	em hbt: 21344, fm hbt: 0, 
+14:54:00:726	56c	watchdog - thread 0 (gpu0), hb time 3090922
+14:54:00:726	56c	WATCHDOG: GPU 0 hangs in OpenCL call, exit
+14:54:00:710	958	checked ETH share on CPU, spent 4ms
+14:54:00:726	aa0	ETH: 05/19/18-14:54:00 - New job from eth-eu1.nanopool.org:9999
+14:54:00:741	aa0	target: 0x000000006df37f67 (diff: 10000MH), epoch 188(2.47GB)
+14:54:00:741	aa0	ETH - Total Speed: 41.269 Mh/s, Total Shares: 8, Rejected: 0, Time: 01:23
+14:54:00:726	958	sent: {"id":10,"method":"eth_submitWork","params":["0xf546a721cc6e6527","0x399992e1ed978ef639d79f0b26d298caafd61eee336370ffe66ed02e44441410","0x81b752f922967e9d5e45f9420ae400aa9c30b29d18a7c4adab8f8b86f0ac3cc2"]}
+
+14:54:00:726	56c	watchdog - thread 1 (gpu0), hb time 16
+14:54:00:757	9c8	checked ETH share on CPU, spent 4ms
+14:54:00:757	9c8	sent: {"id":11,"method":"eth_submitWork","params":["0xdfd378992f8ccee1","0x399992e1ed978ef639d79f0b26d298caafd61eee336370ffe66ed02e44441410","0xefdc12c4198ae02689bc1a9af01da578ed8af4b9d760e141890508bd83b85d46"]}
+
+14:54:00:757	9c8	ETH: put share nonce dfd378992f8ccee1
+14:54:00:757	b70	
+14:54:00:757	b70	GPU #0: gfx900 (Radeon RX Vega), 8176 MB available, 56 compute units (pci bus 11:0:0)
+14:54:00:773	b70	GPU #1: gfx900 (Radeon RX Vega), 8176 MB available, 56 compute units (pci bus 14:0:0)
+14:54:00:741	958	ETH: put share nonce f546a721cc6e6527
+14:54:00:757	56c	watchdog - thread 2 (gpu1), hb time 3086031
+14:54:00:757	9cc	checked ETH share on CPU, spent 4ms
+14:54:00:788	9cc	sent: {"id":11,"method":"eth_submitWork","params":["0xd5293a9255597bbe","0x399992e1ed978ef639d79f0b26d298caafd61eee336370ffe66ed02e44441410","0x8e64bf9f47f4e08bdb06345d39d8a33bfc642b88f0a7e25d99ff3efae5fae9ea"]}
+
+14:54:00:741	b6c	sent: devfee auth
+14:54:00:788	b70	ETH - Total Speed: 82.834 Mh/s, Total Shares: 8(2+8), Rejected: 0(0+0), Time: 01:23
+14:54:00:788	56c	WATCHDOG: GPU 1 hangs in OpenCL call, exit
+14:54:00:788	9cc	ETH: put share nonce d5293a9255597bbe
+14:54:00:804	b6c	DevFee: ETH: Stratum - Connected (eth-eu1.nanopool.org:9999) (unsecure)
+14:54:00:804	b70	ETH: GPU0 41.269 Mh/s, GPU1 41.565 Mh/s
+14:54:00:804	aa0	ETH: GPU0 41.269 Mh/s, GPU1 0.000 Mh/s
+14:54:00:804	56c	watchdog - thread 3 (gpu1), hb time 3023922
+14:54:00:820	b70	Incorrect ETH shares: GPU0 7
+14:54:00:820	aa0	ETH: 05/19/18-14:54:00 - SHARE FOUND - (GPU 1)
+14:54:00:804	b6c	buf: {"jsonrpc":"2.0","id":2,"result":true}
+{"jsonrpc":"2.0","id":0,"result":["0xf82bb50b5c2fff483ff521aff8c0312efb18d16924612f896e36453e66a47c30","0xc16796d9b504e2ac0305bf673638b84a7d0278ba389d82377cde63edcca1a1bb","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+14:54:00:820	56c	WATCHDOG: GPU 1 hangs in OpenCL call, exit
+14:54:00:835	b70	1 minute average ETH total speed: 82.951 Mh/s
+14:54:00:835	b70	Pool switches: ETH - 0
+14:54:00:835	b6c	ETH: Authorized
+14:54:00:835	1c88	GPU 0 temp = 36, old fan speed = 0, new fan speed = 50 
+14:54:00:820	aa0	buf overflow: 0 46887
+14:54:00:851	b70	Current ETH share target: 0x000000006df37f67 (diff: 10000MH), epoch 188(2.47GB)
+14:54:00:835	b6c	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:54:00:851	b6c	remove first packet 243
+14:54:00:866	b70	Current -dcri values: -dcri 6,6
+14:54:00:851	1c88	GPU 1 temp = 37, old fan speed = 0, new fan speed = 50 
+14:54:00:866	aa0	ETH: Connection lost, retry in 20 sec...
+14:54:00:866	b6c	DevFee: start mining
+14:54:00:882	b70	GPU0 t=36C fan=0%, GPU1 t=37C fan=0%
+14:54:00:882	b70	
+14:54:00:992	1c88	Quit, please wait...
+14:54:02:548	56c	Restarting OK, exit...
+
+
