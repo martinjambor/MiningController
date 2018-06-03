@@ -1,24 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
-
-namespace Desktop
+﻿namespace Desktop
 {
     using Newtonsoft.Json;
     using System.Configuration;
+    using System;
+    using System.IO;
+    using System.Windows;
+    
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -37,19 +24,19 @@ namespace Desktop
                     this.Show();
                     this.WindowState = WindowState.Normal;
                 };
+
+            Settings settings = ReadJson();
+            if (settings != null)
+            {
+                Wallet.Text = settings.pool_list[0].wallet_address;
+            }
+
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-
             string poolsPath = ConfigurationSettings.AppSettings.Get("poolsTextFile");
-            string json = string.Empty;
-            Settings items = null;
-            using (StreamReader r = new StreamReader(poolsPath))
-            {
-                json = r.ReadToEnd();
-                items = JsonConvert.DeserializeObject<Settings>(json);
-            }
+            Settings items = ReadJson();
 
             items.pool_list[0].wallet_address = Wallet.Text;
 
@@ -70,7 +57,27 @@ namespace Desktop
             if (WindowState == WindowState.Minimized)
                 this.Hide();
 
+            Settings settings = ReadJson();
+            if (settings != null)
+            {
+                Wallet.Text = settings.pool_list[0].wallet_address;
+            }
+
             base.OnStateChanged(e);
+        }
+
+        private Settings ReadJson()
+        {
+            string poolsPath = ConfigurationSettings.AppSettings.Get("poolsTextFile");
+            string json = string.Empty;
+            Settings items = null;
+            using (StreamReader r = new StreamReader(poolsPath))
+            {
+                json = r.ReadToEnd();
+                items = JsonConvert.DeserializeObject<Settings>(json);
+            }
+
+            return items;
         }
     }
 }
