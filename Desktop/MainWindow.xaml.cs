@@ -36,14 +36,15 @@
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             string poolsPath = ConfigurationSettings.AppSettings.Get("poolsTextFile");
-            Settings items = ReadJson();
+            Settings settings = ReadJson();
 
-            items.pool_list[0].wallet_address = Wallet.Text;
+            settings.pool_list[0].wallet_address = Wallet.Text;
 
             using (StreamWriter file = File.CreateText(poolsPath))
             {
                 JsonSerializer serializer = new JsonSerializer();
-                serializer.Serialize(file, items);
+                serializer.Serialize(file, settings);
+                MessageBox.Show("Wallet settings updated.");
             }
         }
 
