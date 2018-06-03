@@ -30,18 +30,11 @@ namespace ProcessChecker
 
         public void ThreadProc()
         {
-            // we're going to wait 5 minutes between calls to GetEmployees, so 
-            // set the interval to 300000 milliseconds 
-            // (1000 milliseconds = 1 second, 5 * 60 * 1000 = 300000)
-            int interval = 10000; // 5 minutes    
-            // this variable tracks how many milliseconds have gone by since 
-            // the last call to GetEmployees. Set it to zero to indicate we're 
-            // starting fresh
+            int interval = 10000;  
             int elapsed = 0;
-            // because we don't want to use 100% of the CPU, we will be 
-            // sleeping for 1 second between checks to see if it's time to 
-            // call GetEmployees
-            int waitTime = 1000; // 1 second
+            int waitTime = 1000;
+            bool gamingModeOn = false;
+
             try
             {
                 // do this loop forever (or until the service is stopped)
@@ -53,13 +46,17 @@ namespace ProcessChecker
                         // reset how much time has passed to zero
                         elapsed = 0;
                         Process[] localByName = Process.GetProcessesByName(ConfigurationManager.AppSettings.Get("checkedProcessName"));
-                        if (localByName.Length == 0)
+                        if (localByName.Length == 0 && gamingModeOn == true)
                         {
                            Process.Start(ConfigurationManager.AppSettings.Get("ifNotRunningBatFile"));
+                            gamingModeOn = false;
                         }
-                        else
+
+
+                        if (localByName.Length > 0 && gamingModeOn == false)
                         {
                            Process.Start(ConfigurationManager.AppSettings.Get("ifRunningBatFile"));
+                            gamingModeOn = true;
                         }
                     }
                     // Sleep for 1 second
