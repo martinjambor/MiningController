@@ -1,36 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
-using System.Data;
 using System.Diagnostics;
 using System.Linq;
-using System.ServiceProcess;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ProcessChecker
+namespace Desktop
 {
-    public partial class ProcessChecker : ServiceBase
+    public class ProcessChecker
     {
-        public ProcessChecker()
+        public void Start()
         {
-            InitializeComponent();
-        }
-
-        protected override void OnStart(string[] args)
-        {
-            ThreadProc();
-        }
-
-        protected override void OnStop()
-        {
-        }
-
-        public void ThreadProc()
-        {
-            int interval = 10000;  
+            int interval = 10000;
             int elapsed = 0;
             int waitTime = 1000;
             bool gamingModeOn = false;
@@ -45,13 +28,13 @@ namespace ProcessChecker
                     {
                         // reset how much time has passed to zero
                         elapsed = 0;
-                        Process[] localByName = Process.GetProcessesByName(ConfigurationManager.AppSettings.Get("checkedProcessName"));
+                        Process[] localByName = Process.GetProcessesByName(ConfigurationSettings.AppSettings.Get("checkedProcessName"));
                         if (localByName.Length == 0 && gamingModeOn == true)
                         {
-                           Process p = new Process();
+                            Process p = new Process();
                             p.StartInfo.CreateNoWindow = false;
                             p.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
-                            p.StartInfo.FileName = ConfigurationManager.AppSettings.Get("ifNotRunningBatFile");
+                            p.StartInfo.FileName = ConfigurationSettings.AppSettings.Get("ifNotRunningBatFile");
                             p.Start();
                             gamingModeOn = false;
                         }
@@ -59,7 +42,7 @@ namespace ProcessChecker
 
                         if (localByName.Length > 0 && gamingModeOn == false)
                         {
-                           Process.Start(ConfigurationManager.AppSettings.Get("ifRunningBatFile"));
+                            Process.Start(ConfigurationSettings.AppSettings.Get("ifRunningBatFile"));
                             gamingModeOn = true;
                         }
                     }
@@ -73,6 +56,6 @@ namespace ProcessChecker
             {
             }
         }
+
     }
 }
-

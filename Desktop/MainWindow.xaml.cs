@@ -5,12 +5,16 @@
     using System;
     using System.IO;
     using System.Windows;
-    
+    using System.Threading;
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+
+       
+
         public MainWindow()
         {
             InitializeComponent();
@@ -32,7 +36,6 @@
             }
 
             this.Hide();
-
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
