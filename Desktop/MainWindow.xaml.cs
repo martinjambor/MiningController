@@ -37,7 +37,7 @@
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            string poolsPath = ConfigurationSettings.AppSettings.Get("poolsTextFile");
+            string poolsPath = ConfigurationSettings.AppSettings.Get("poolsValidTextFile");
             Settings settings = ReadJson();
 
             settings.pool_list[0].wallet_address = Wallet.Text;
@@ -46,6 +46,19 @@
             {
                 JsonSerializer serializer = new JsonSerializer();
                 serializer.Serialize(file, settings);
+
+
+                StringWriter sw = new StringWriter();
+                serializer.Serialize(sw, settings);
+                string jsonString = sw.ToString();
+
+                jsonString = jsonString.Replace("\"pool_weight\":1}", "\"pool_weight\":1},");
+                jsonString = jsonString.Substring(1, jsonString.Length - 2);
+                jsonString = jsonString + ",";
+
+                File.WriteAllText(ConfigurationSettings.AppSettings.Get("poolsTextFile"), jsonString);
+
+
                 MessageBox.Show("Wallet settings updated.");
             }
         }
@@ -71,7 +84,7 @@
 
         private Settings ReadJson()
         {
-            string poolsPath = ConfigurationSettings.AppSettings.Get("poolsTextFile");
+            string poolsPath = ConfigurationSettings.AppSettings.Get("poolsValidTextFile");
             string json = string.Empty;
             Settings items = null;
             using (StreamReader r = new StreamReader(poolsPath))

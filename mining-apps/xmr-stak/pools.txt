@@ -1,1 +1,1 @@
-{"pool_list":[{"pool_address":"xmr-eu1.nanopool.org:14433","wallet_address":"aaaa","rig_id":"gaming-rig","pool_password":"z","use_nicehash":false,"use_tls":true,"tls_fingerprint":"","pool_weight":1}],"currency":"monero7"}
+"pool_list":[{"pool_address":"xmr-eu1.nanopool.org:14433","wallet_address":"bbbb","rig_id":"gaming-rig","pool_password":"z","use_nicehash":false,"use_tls":true,"tls_fingerprint":"","pool_weight":1},],"currency":"monero7",
