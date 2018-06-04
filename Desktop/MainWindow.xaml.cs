@@ -31,6 +31,8 @@
                 Wallet.Text = settings.pool_list[0].wallet_address;
             }
 
+            this.Hide();
+
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
