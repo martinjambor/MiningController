@@ -12,9 +12,6 @@
     /// </summary>
     public partial class MainWindow : Window
     {
-
-       
-
         public MainWindow()
         {
             InitializeComponent();
@@ -33,6 +30,18 @@
             if (settings != null)
             {
                 Wallet.Text = settings.pool_list[0].wallet_address;
+            }
+
+            if (!File.Exists("process.setfile"))
+            {
+                File.Create("process.setfile");
+            }
+
+            string[] processes = File.ReadAllLines("process.setfile");
+
+            foreach (string process in processes)
+            {
+                Processes.Items.Add(process);
             }
 
             this.Hide();
@@ -64,6 +73,15 @@
 
                 MessageBox.Show("Wallet settings updated.");
             }
+
+            using (StreamWriter file = new StreamWriter("process.setfile"))
+            {
+                foreach (string process in Processes.Items)
+                {
+                    file.WriteLine(process);
+                }
+            }
+
         }
 
         private void InitializeValues()
@@ -97,6 +115,20 @@
             }
 
             return items;
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            var processName = Process.Text.Trim();
+            if (!string.IsNullOrEmpty(processName) && !Processes.Items.Contains(processName))
+            {
+                Processes.Items.Add(processName);
+            }
+        }
+
+        private void Remove_Click(object sender, RoutedEventArgs e)
+        {
+            Processes.Items.Remove(Processes.SelectedItem);
         }
     }
 }

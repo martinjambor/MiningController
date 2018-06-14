@@ -5,21 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Desktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="200" Width="550">
+        Title="MainWindow" Height="500" Width="550">
     <Grid DataContext="MainModelViewModel">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"></ColumnDefinition>
-            <ColumnDefinition Width="400"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="50"></RowDefinition>
-            <RowDefinition Height="50"></RowDefinition>            
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock Margin="10" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" FontWeight="Black">Mining wallet settings</TextBlock>
         <TextBlock Margin="10" Grid.Column="0" Grid.Row="1" >Wallet: </TextBlock>
-        <TextBox Margin="10" Grid.Column="1" Grid.Row="1" Name="Wallet"></TextBox>
+        <TextBox Margin="10" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Name="Wallet"></TextBox>
 
-        <Button Margin="10" Name="Save" Content="Save" Grid.Column="2" Grid.Row="3" Command="" Click="Save_Click"></Button>
+        <TextBlock Margin="10" Grid.Column="0" Grid.Row="2" >Process to add:</TextBlock>
+        <TextBox Margin="10" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" Name="Process"></TextBox>
+
+        <TextBlock Margin="10" Grid.Column="0" Grid.Row="3" >Processes:</TextBlock>
+        <ListView Margin="10" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" Name="Processes"></ListView>
+
+        <Button Margin="10" Grid.Column="1" Grid.Row="4" Name="Add" Click="Add_Click">Add Process</Button>
+        <Button Margin="10" Grid.Column="2" Grid.Row="4" Name="Remove" Click="Remove_Click">Remove Process</Button>
+
+        <Button Margin="10" Name="Save" Content="Save" Grid.Column="2" Grid.Row="5" Command="" Click="Save_Click"></Button>
     </Grid>
 </Window>
